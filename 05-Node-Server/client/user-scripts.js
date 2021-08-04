@@ -38,7 +38,7 @@ function userLogin(){
     console.log(userEmail, userPass);
 
     let userData = { user: { email: userEmail, password: userPass}};
-    console.log(`USERDATA ==> ${UserData.user.email} ${UserData.user.password}`)
+    console.log(`USERDATA ==> ${userData.user.email} ${userData.user.password}`)
 
     fetch ('http://localhost:3000/user/create', {
         method: 'POST',

@@ -31,7 +31,7 @@ function displayMine(){
                 }
 
                 if (response.length === 0){
-                     let display = document.getElementById('journals')
+                     //let display = document.getElementById('journals')
                      let header = document.createElement('h5')
 
                      display.appendChild(header)
@@ -41,7 +41,7 @@ function displayMine(){
                     //code being added
                     for (i=0; i< response.length; i++){
                         let display = document.getElementById('journals')
-                        let card = document.getElementById('div')
+                        let card = document.createElement('div')
                         let body = document.createElement('div')
                         let header = document.createElement('h5')
                         let subtitle = document.createElement('h6')
@@ -202,8 +202,8 @@ function displayByTitle(){
                      header.setAttribute("class", "noPosts")
                 } else{
                     
-                    for (i=0; i< response.length; i++){
-                        let card = document.createElementById('div')
+                    for (i=0; i < response.length; i++){
+                        let card = document.createElement('div')
                         let body = document.createElement('div')
                         let header = document.createElement('h5')
                         let subtitle = document.createElement('h6')
