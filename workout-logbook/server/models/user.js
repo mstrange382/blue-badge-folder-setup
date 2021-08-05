@@ -1,22 +1,13 @@
 module.exports = (sequelize, DataTypes) => {
     const Workout = sequelize.define('workout',{
-        description: {
+        username: {
             type: DataTypes.STRING
             //allowNull: false
         },
-        definition: {
+        passwordhash: {
             type: DataTypes.STRING
-            //allowNull: false
-        },
-        result: {
-            type: DataTypes.STRING
-            //allowNull: false
-        },
-        owner_id: {
-            type:DataTypes.INEGER
             //allowNull: false
         }
-
         })
     return Workout;
 };
