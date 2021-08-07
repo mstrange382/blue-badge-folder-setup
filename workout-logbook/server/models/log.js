@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Workout = sequelize.define('workout',{
+    const Workout = sequelize.define('logs',{
         description: {
             type: DataTypes.STRING
             //allowNull: false
@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
             //allowNull: false
         },
         owner_id: {
-            type:DataTypes.INEGER
+            type:DataTypes.INTEGER
             //allowNull: false
         }
 
